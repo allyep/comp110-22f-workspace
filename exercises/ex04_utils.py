@@ -2,9 +2,12 @@
 
 __author__ = "730389484"
 
+
 def all(input: list[int], integer: int) -> bool:
     """Checks to see if integers in a list are all the same as given integer."""
     ind_check: int = 0 
+    if len(input) == 0:
+        return False
     while ind_check < len(input):
         if input[ind_check] != integer:
             return False
@@ -30,6 +33,8 @@ def max(input: list[int]) -> int:
 def is_equal(input_1: list[int], input_2: list[int]) -> bool:
     """Checks to see if every element at every index is equal in two give lists."""
     i: int = 0 
+    if len(input_1) != len(input_2):
+        return False
     while i < len(input_1) and i < len(input_2):
         if input_1[i] != input_2[i]:
             return False 
