@@ -1,6 +1,6 @@
-"""EX06 -- Choose Your Own Adventure"""
+"""EX06 -- Choose Your Own Adventure."""
 
-__author__ = "730389484ß"
+__author__ = "730389484"
 
 player: str = ""
 points: int = 0
@@ -39,7 +39,6 @@ def main() -> None:
 def one_to_5() -> None:
     """Prompts user to continue providing guess of number until guess is correct and returns points."""
     global points
-    i: int = 0
     from random import randint
     rand_number: int = randint(1, 5)
     user_guess: int = input(f"Welcome {player}! Please enter a number 1-5: ")
@@ -75,11 +74,6 @@ def one_to_points(points_current: int) -> int:
         print(f"You now have {points} total adventure points! Great job!")
     return points 
         
-    
-    
-
-
-
-
+        
 if __name__ == "__main__":
     main()
