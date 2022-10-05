@@ -1,8 +1,9 @@
-"""EX05 -- Unit Tests.  """
+"""EX05 -- Unit Tests."""
 
 __author__ = "730389484"
 
 from exercises.ex05.utils import only_evens, sub, concat
+
 
 def test_only_evens_empty() -> None:
     """Test that if given an empty list, it returns an empty list."""
@@ -43,7 +44,7 @@ def test_concat_same_lists() -> None:
     assert concat(input_1, input_2) == [6, 4, 7, 6, 4, 7]
 
 
-def test_sub_start_equals_length()-> None:
+def test_sub_start_equals_length() -> None:
     """Tests that if start index equals length of list, will return an empty list."""
     a_list: list[int] = [1, 2]
     start_ind: int = 2
