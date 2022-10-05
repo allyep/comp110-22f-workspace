@@ -41,7 +41,7 @@ def one_to_5() -> None:
     global points
     from random import randint
     rand_number: int = randint(1, 5)
-    user_guess: int = input(f"Welcome {player}! Please enter a number 1-5: ")
+    user_guess: str = input(f"Welcome {player}! Please enter a number 1-5: ")
     while int(user_guess) != rand_number:
         if int(user_guess) > 5 or int(user_guess) < 1:
             user_guess = input("That isn't a number from 1-5! Try again: ")
@@ -74,6 +74,6 @@ def one_to_points(points_current: int) -> int:
         print(f"You now have {points} total adventure points! Great job!")
     return points 
         
-        
+
 if __name__ == "__main__":
     main()
