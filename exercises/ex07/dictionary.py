@@ -2,6 +2,7 @@
 
 __author__ = "730389484"
 
+
 def invert(input: dict[str, str]) -> dict[str, str]:
     """Returns a dictionary with inverted keys and values."""
     invert_result: dict[str, str] = {}   
@@ -22,13 +23,12 @@ def favorite_color(names_and_colors: dict[str, str]) -> str:
         if names_and_colors[name] in frequency_dict:
             frequency_dict[names_and_colors[name]] += 1
         else: 
-             frequency_dict[names_and_colors[name]] = 1
+            frequency_dict[names_and_colors[name]] = 1
         if frequency_dict[names_and_colors[name]] > counter:
             counter = frequency_dict[names_and_colors[name]]
             most_frequent_color = names_and_colors[name] 
     return most_frequent_color
 
-    
 
 def count(list_input: list[str]) -> dict[str, int]:
     """Produces dictionary with values as the count of number of times a value appeared in a list."""
